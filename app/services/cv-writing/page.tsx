@@ -7,8 +7,9 @@ export default function CVWritingPage() {
     <div className="flex flex-col min-h-screen gradient-bg">
       <MainNav />
       <main className="flex-1">
+        {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <FileText className="h-16 w-16 text-primary" />
               <div className="space-y-2">
@@ -24,11 +25,15 @@ export default function CVWritingPage() {
           </div>
         </section>
 
+        {/* Why Choose Our CV Writing Service / Our Process */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-black/20">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="grid gap-12 lg:grid-cols-2">
+              {/* Left Column */}
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">Why Choose Our CV Writing Service?</h2>
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">
+                  Why Choose Our CV Writing Service?
+                </h2>
                 <ul className="space-y-4">
                   {[
                     "Professional writers with industry expertise",
@@ -44,8 +49,12 @@ export default function CVWritingPage() {
                   ))}
                 </ul>
               </div>
+
+              {/* Right Column */}
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">Our Process</h2>
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">
+                  Our Process
+                </h2>
                 <div className="grid gap-4">
                   {[
                     {
@@ -76,11 +85,14 @@ export default function CVWritingPage() {
           </div>
         </section>
 
+        {/* CTA Section */}
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Ready to Transform Your CV?</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                  Ready to Transform Your CV?
+                </h2>
                 <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
                   Take the first step towards your dream job with a professionally written CV.
                 </p>
@@ -97,4 +109,3 @@ export default function CVWritingPage() {
     </div>
   )
 }
-
