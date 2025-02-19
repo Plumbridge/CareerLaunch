@@ -5,19 +5,18 @@ import { MainNav } from "@/components/main-nav"
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen gradient-bg">
+    <div className="flex flex-col min-h-screen bg-background">
       <MainNav />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   Launch Your Career with Confidence
                 </h1>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Empowering university students and job seekers to find their dream careers. Your success story starts
-                  here.
+                  Empowering university students and job seekers to find their dream careers. Your success story starts here.
                 </p>
               </div>
               <div className="space-x-4">
@@ -30,7 +29,7 @@ export default function Home() {
           </div>
         </section>
         <section id="services" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
               Our Services
             </h2>
@@ -57,15 +56,13 @@ export default function Home() {
                 {
                   icon: FileText,
                   title: "CV Writing",
-                  description:
-                    "Expert assistance in crafting compelling CVs that highlight your strengths and experiences.",
+                  description: "Expert assistance in crafting compelling CVs that highlight your strengths and experiences.",
                   href: "/services/cv-writing",
                 },
                 {
                   icon: PenTool,
                   title: "Cover Letter Support",
-                  description:
-                    "Guidance on writing persuasive cover letters tailored to your target roles and industries.",
+                  description: "Guidance on writing persuasive cover letters tailored to your target roles and industries.",
                   href: "/services/cover-letter",
                 },
               ].map((service, index) => (
@@ -83,21 +80,19 @@ export default function Home() {
           </div>
         </section>
         <section id="about" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="grid gap-10 lg:grid-cols-2 items-center">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About CareerLaunch</h2>
                 <p className="text-muted-foreground md:text-xl">
-                  At CareerLaunch, we're dedicated to bridging the gap between education and employment. Our expert team
-                  provides tailored support to help you navigate the job market with confidence.
+                  At CareerLaunch, we're dedicated to bridging the gap between education and employment. Our expert team provides tailored support to help you navigate the job market with confidence.
                 </p>
                 <div className="flex items-center space-x-4">
                   <GraduationCap className="h-6 w-6 text-primary" />
                   <span className="font-medium">Part of the Elevate family</span>
                 </div>
                 <p className="text-muted-foreground">
-                  Working alongside our sister company, Elevate, we offer a complete journey from university admissions
-                  to career success.
+                  Working alongside our sister company, Elevate, we offer a complete journey from university admissions to career success.
                 </p>
                 <Link
                   href="https://elevate-education.com"
@@ -122,7 +117,7 @@ export default function Home() {
           </div>
         </section>
         <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-black/20">
-          <div className="container px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -140,7 +135,7 @@ export default function Home() {
         </section>
       </main>
       <footer className="py-6 w-full border-t border-white/10">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col gap-2 sm:flex-row items-center">
             <p className="text-xs text-muted-foreground">© 2024 CareerLaunch. All rights reserved.</p>
             <nav className="sm:ml-auto flex gap-4 sm:gap-6">
@@ -157,4 +152,3 @@ export default function Home() {
     </div>
   )
 }
-
