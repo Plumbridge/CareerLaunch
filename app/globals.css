@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: 60 100% 98%;  /* Updated to match Elevate */
-    --foreground: 222.2 84% 4.9%;
+    --background: 240 100% 20%;  /* Updated to match Elevate */
+    --foreground: 0 0% 100%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
